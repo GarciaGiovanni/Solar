@@ -1,7 +1,11 @@
 local games = {
-    [3214114884] = "https://raw.githubusercontent.com/bppwd2024-garcia/Solar/main/Universal/aimbot.lua?token=GHSAT0AAAAAAB5PFG5XKVVCYOVOZDELR4HUY6GB24Q";
+    [3214114884] = "https://raw.githubusercontent.com/bppwd2024-garcia/Solar/main/Games/FlagWars.lua";
 }
+local universal = ""
 
 if games[game.PlaceId] ~= nil then
-    loadstring(games[game.PlaceId]);
+    loadstring(game:HttpGet(games[game.PlaceId]))()
+end
+else
+    loadstring(""))()
 end
